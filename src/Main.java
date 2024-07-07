@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         //Задача 1: Простой цикл от 1 до 10
         System.out.println("Задача 1");
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
         //Задача 2: Простой обратный цикл от 1 до 10
@@ -12,7 +12,7 @@ public class Main {
         }
         //Задача 3: Цикл чётных чисел от 0 до 17
         System.out.println("Задача 3");
-        for (int i = 0; i < 17; i = i + 2) {
+        for (int i = 0; i <=17; i = i + 2) {
             System.out.println(i);
         }
         //Задача 4: Цикл от большего к меньшему, область 10;-10
@@ -48,7 +48,7 @@ public class Main {
         int salaryPercent = 29000;
         int totalPercent = 0;
         for (int i = 1; i <= 12; i++) {
-            totalPercent = totalPercent + totalPercent / 100;
+            totalPercent = (int) (totalPercent * 1.01);
             totalPercent = totalPercent + salaryPercent;
             System.out.println("Месяц " + i + " сумма накоплений равна " + totalPercent + " рублей");
         }
